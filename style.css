@@ -26,6 +26,21 @@ body {
   color: #222;
 }
 
+.header h1 a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header h1 a:hover {
+  color: #0077ff;
+}
+
+.header h1 a:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: 4px;
+}
+
 .header p {
   color: #555;
   font-size: 1rem;
@@ -49,6 +64,11 @@ body {
 
 .nav a:hover {
   color: #0077ff;
+}
+
+.nav a:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
 }
 
 /* FEATURED */
@@ -107,6 +127,11 @@ body {
   background: #0059c9;
 }
 
+.btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
 /* Article Page Styles */
 .article-hero {
   position: relative;
@@ -159,6 +184,11 @@ body {
 
 .buy-btn:hover {
   background: #0059c9;
+}
+
+.buy-btn:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
 }
 
 .disclaimer {
@@ -218,6 +248,11 @@ article a:hover {
   text-decoration: underline;
 }
 
+article a:focus {
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -226,4 +261,102 @@ footer {
   color: #666;
   margin-top: 40px;
   font-size: 0.9rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #fff;
+  color: #666;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  .featured {
+    height: 50vh;
+    margin: 20px 10px;
+  }
+
+  .featured h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured p {
+    font-size: 0.95rem;
+  }
+
+  .article-hero {
+    height: 40vh;
+  }
+
+  .article-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .articles {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .article-content {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .article-content h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    padding: 30px 10px;
+  }
+
+  .featured {
+    height: 40vh;
+    border-radius: 10px;
+  }
+
+  .featured h2 {
+    font-size: 1.2rem;
+  }
+
+  .featured p {
+    font-size: 0.85rem;
+  }
+
+  .btn, .buy-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  article h3 {
+    font-size: 1rem;
+  }
+
+  article p {
+    font-size: 0.9rem;
+  }
 }
