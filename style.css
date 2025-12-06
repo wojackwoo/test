@@ -254,15 +254,7 @@ article a:focus {
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px 10px;
-  background: #fff;
-  color: #666;
-  margin-top: 40px;
-  font-size: 0.9rem;
-}
-
+footer,
 .footer {
   text-align: center;
   padding: 30px 10px;
