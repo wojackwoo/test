@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* ===== GLOBAL RESET & BASE STYLES ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,17 +19,31 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* ===== HEADER & NAVIGATION ===== */
 .header {
   text-align: center;
-  padding: 40px 15px;
+  padding: 30px 15px;
   background: #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #222;
+  margin-bottom: 5px;
+}
+
+.header h1 a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header h1 a:hover {
+  color: #0077ff;
 }
 
 .header p {
@@ -31,27 +51,57 @@ body {
   font-size: 1rem;
 }
 
-/* NAV */
 .nav {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  background: #f5f5f5;
-  padding: 10px 0;
+  gap: 25px;
+  margin-top: 15px;
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  transition: 0.3s;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+  padding: 5px 10px;
 }
 
 .nav a:hover {
   color: #0077ff;
 }
 
-/* FEATURED */
+/* ===== FOOTER ===== */
+footer, .footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  color: #666;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+footer p, .footer p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  color: #764ba2;
+}
+
+/* ===== HOMEPAGE STYLES ===== */
 .featured {
   position: relative;
   background: url("https://thumbs.dreamstime.com/b/flat-lay-modern-smart-gadgets-accessories-seamless-flat-lay-various-modern-smart-gadgets-including-smartwatches-360593362.jpg") center/cover no-repeat;
@@ -71,7 +121,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .featured .overlay {
@@ -107,68 +157,6 @@ body {
   background: #0059c9;
 }
 
-/* Article Page Styles */
-.article-hero {
-  position: relative;
-  background: url("https://thumbs.dreamstime.com/b/flat-lay-modern-smart-gadgets-accessories-seamless-flat-lay-various-modern-smart-gadgets-including-smartwatches-360593362.jpg") center/cover no-repeat;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
-.article-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.article-hero .overlay {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.article-content {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-  line-height: 1.8;
-  color: #333;
-}
-
-.article-content h2 {
-  margin-top: 40px;
-  color: #111;
-}
-
-.buy-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #0077ff;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.buy-btn:hover {
-  background: #0059c9;
-}
-
-.disclaimer {
-  font-size: 0.9rem;
-  margin-top: 40px;
-  color: #666;
-  text-align: center;
-}
-
-/* ARTICLE GRID */
 .articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -218,12 +206,23 @@ article a:hover {
   text-decoration: underline;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px 10px;
-  background: #fff;
-  color: #666;
-  margin-top: 40px;
-  font-size: 0.9rem;
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .nav {
+    gap: 15px;
+  }
 }
