@@ -1,62 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Living Reviews — Simplified Inspiration</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ===== HEADER SECTION ===== -->
   <header class="header">
-    <h1>Smart Living Reviews</h1>
-    <p>Your source for honest Amazon finds & daily smart living tips ✨</p>
+    <h1><a href="index.html">Smart Living Reviews</a></h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="article.html">Articles</a>
+    </nav>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="article.html">articles</a>
-    
-  </nav>
-  
-  <!-- FEATURED -->
-<section class="featured">
-  <div class="overlay">
-    <h2>Top 5 Smart Gadgets You’ll Actually Use in 2025</h2>
-    <p>We tested the latest Amazon gadgets to find the ones that truly make your life easier.</p>
-    <a href="article.html" class="btn">Read More →</a>
-  </div>
-</section>
+  <!-- ===== HERO SECTION - Eye-catching visual with featured content ===== -->
+  <section class="home-hero">
+    <div class="overlay">
+      <h1>Your Source for Honest Amazon Finds</h1>
+      <p>Discover smart products and daily living tips that truly make a difference ✨</p>
+      <a href="#articles" class="cta-btn">Explore Our Reviews ↓</a>
+    </div>
+  </section>
 
+  <!-- ===== FEATURED SPOTLIGHT ===== -->
+  <section class="featured-spotlight">
+    <div class="spotlight-content">
+      <span class="spotlight-badge">🔥 Featured Article</span>
+      <h2>Top 5 Smart Gadgets You'll Actually Use in 2025</h2>
+      <p>We tested the latest Amazon gadgets to find the ones that truly make your life easier. From smart home devices to productivity tools, these picks deliver real value.</p>
+      <a href="article.html" class="spotlight-btn">Read Full Review →</a>
+    </div>
+  </section>
 
-  <!-- ARTICLE GRID -->
-  <main class="articles">
-    <article>
-      <img src="https://assets.wfcdn.com/im/13339413/resize-h0-w1186%5Ecompr-r85/3399/339944709/_339944709_339944709_2.jpg" alt="Kitchen gadgets">
-      <h3>5 Kitchen Tools That Will Change Your Mornings</h3>
-      <p>From smart mugs to quick blenders — these Amazon finds save time and energy.</p>
-      <a href="article.html">Read More</a>
-    </article>
+  <!-- ===== ARTICLE GRID SECTION ===== -->
+  <main id="articles" class="home-content">
+    <div class="section-header">
+      <h2 class="section-title">📚 Latest Reviews & Guides</h2>
+      <p class="section-subtitle">Expert-tested products and honest recommendations</p>
+    </div>
 
-    <article>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-tuBbd_A_iS64CPuFD7981M0EB61gXhqZw&s" alt="Fitness">
-      <h3>The Best Budget Smartwatches on Amazon</h3>
-      <p>Track your sleep, steps, and heart rate without breaking the bank.</p>
-      <a href="article.html">Read More</a>
-    </article>
+    <div class="article-grid">
+      
+      <!-- Article Card 1 -->
+      <article class="article-card">
+        <div class="article-image">
+          <img src="https://assets.wfcdn.com/im/13339413/resize-h0-w1186%5Ecompr-r85/3399/339944709/_339944709_339944709_2.jpg" alt="Kitchen gadgets" loading="lazy">
+          <span class="category-badge">Kitchen</span>
+        </div>
+        <div class="article-details">
+          <h3>5 Kitchen Tools That Will Change Your Mornings</h3>
+          <p>From smart mugs to quick blenders — these Amazon finds save time and energy, making your morning routine effortless.</p>
+          <div class="article-footer">
+            <span class="read-time">⏱️ 5 min read</span>
+            <a href="article.html" class="article-btn">Read More →</a>
+          </div>
+        </div>
+      </article>
 
-    <article>
-      <img src="https://images.samsung.com/is/image/samsung/assets/vn/home-appliances/buying-guide/buying-guide-landing_key-visual_pc_1440x640.jpg?imwidth=1366" alt="Home hacks">
-      <h3>Home Hacks That Feel Like Magic ✨</h3>
-      <p>Make your space smarter and cleaner with these clever Amazon products.</p>
-      <a href="article.html">Read More</a>
-    </article>
+      <!-- Article Card 2 -->
+      <article class="article-card">
+        <div class="article-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-tuBbd_A_iS64CPuFD7981M0EB61gXhqZw&s" alt="Fitness" loading="lazy">
+          <span class="category-badge">Fitness</span>
+        </div>
+        <div class="article-details">
+          <h3>The Best Budget Smartwatches on Amazon</h3>
+          <p>Track your sleep, steps, and heart rate without breaking the bank. We've found the perfect balance of features and affordability.</p>
+          <div class="article-footer">
+            <span class="read-time">⏱️ 6 min read</span>
+            <a href="article.html" class="article-btn">Read More →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article Card 3 -->
+      <article class="article-card">
+        <div class="article-image">
+          <img src="https://images.samsung.com/is/image/samsung/assets/vn/home-appliances/buying-guide/buying-guide-landing_key-visual_pc_1440x640.jpg?imwidth=1366" alt="Home hacks" loading="lazy">
+          <span class="category-badge">Home</span>
+        </div>
+        <div class="article-details">
+          <h3>Home Hacks That Feel Like Magic ✨</h3>
+          <p>Make your space smarter and cleaner with these clever Amazon products that transform your living environment.</p>
+          <div class="article-footer">
+            <span class="read-time">⏱️ 7 min read</span>
+            <a href="article.html" class="article-btn">Read More →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- ===== NEWSLETTER/CTA SECTION ===== -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>🌟 Never Miss a Deal</h2>
+      <p>Join thousands of smart shoppers discovering the best Amazon products every week</p>
+      <a href="article.html" class="cta-btn large">Browse All Reviews</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
     <p>© 2025 Smart Living Reviews · Amazon Affiliate Partner</p>
   </footer>
 
