@@ -145,6 +145,17 @@ body {
   color: #111;
 }
 
+.product-img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 .buy-btn {
   display: inline-block;
   margin-top: 10px;
